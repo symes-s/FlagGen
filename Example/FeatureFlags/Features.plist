@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>DefaultValue</key>
+		<true/>
+		<key>Key</key>
+		<string>promo_banner_enabled</string>
+		<key>Title</key>
+		<string>Promo Banner</string>
+		<key>Type</key>
+		<string>PSToggleSwitchSpecifier</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<false/>
+		<key>Key</key>
+		<string>new_arrival_badge_enabled</string>
+		<key>Title</key>
+		<string>Show New Arrival Badge</string>
+		<key>Type</key>
+		<string>PSToggleSwitchSpecifier</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<false/>
+		<key>Key</key>
+		<string>wishlist_button_enabled</string>
+		<key>Title</key>
+		<string>Wish-list Button Enabled</string>
+		<key>Type</key>
+		<string>PSToggleSwitchSpecifier</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<false/>
+		<key>Key</key>
+		<string>star_ratings_enabled</string>
+		<key>Title</key>
+		<string>Star Ratings</string>
+		<key>Type</key>
+		<string>PSToggleSwitchSpecifier</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>standard</string>
+		<key>Key</key>
+		<string>checkout_type</string>
+		<key>ShortTitles</key>
+		<array>
+			<string>🎰</string>
+			<string>⚡</string>
+			<string>💎</string>
+		</array>
+		<key>Title</key>
+		<string>Checkout Type</string>
+		<key>Titles</key>
+		<array>
+			<string>🎰 Standard</string>
+			<string>⚡ Express</string>
+			<string>💎 VIP</string>
+		</array>
+		<key>Type</key>
+		<string>PSMultiValueSpecifier</string>
+		<key>Values</key>
+		<array>
+			<string>standard</string>
+			<string>express</string>
+			<string>vip</string>
+		</array>
+	</dict>
+</array>
+</plist>
