@@ -63,6 +63,7 @@ struct GenerateFeatureFlagsPlugin: CommandPlugin {
             let plistPath = context.package.directory.appending(subpath: String(jsonFilename.dropLast(5)) + ".plist")
             try convertToPlist(json: jsonPath, plist: plistPath)
             try FileManager.default.removeItem(atPath: jsonPath.string)
+            print("Generated \(plistPath.string)")
         }
 
         print("Generated \(featuresPlist.string)")
@@ -101,7 +102,7 @@ struct GenerateFeatureFlagsPlugin: CommandPlugin {
     }
 }
 
-enum GenerationError: Error, CustomStringConvertible {
+enum GenerationError: Error, CustomStringConvertible, LocalizedError {
     case flagGenDependencyNotFound
     case noTargetFound(String?)
     case emptyTarget(String)
@@ -122,4 +123,6 @@ enum GenerationError: Error, CustomStringConvertible {
             return "\(tool) exited with status \(status)."
         }
     }
+
+    var errorDescription: String? { description }
 }
